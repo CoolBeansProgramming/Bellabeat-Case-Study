@@ -39,4 +39,12 @@ Key Questions
 
 Data source: 
 
-FitBit Fitness Tracker Data on [Kaggle]( https://www.kaggle.com/datasets/arashnic/fitbit). The data contains smart health data from personal fitness trackers for thirty fitbit users. The data was collected via a survey of personal tracker data, including minute-level output for physical activity, hear rate, and sleep monitoring, through Amazon Mechanical Turk between March 12, 2016 and May 12, 2016 . The data includes information about daily activity, steps, and heart rate. 
+FitBit Fitness Tracker Data on [Kaggle]( https://www.kaggle.com/datasets/arashnic/fitbit) in 18 csv files. The data contains smart health data from personal fitness trackers for thirty fitbit users. The data was collected via a survey of personal tracker data, including minute-level output for physical activity, hear rate, and sleep monitoring, through Amazon Mechanical Turk between March 12, 2016 and May 12, 2016 . The data includes information about daily activity, steps, and heart rate. 
+
+Limitations: 
+
+The sample size is small as only 30 individuals were considered. 
+
+The data is about six years old; the FitBit devices have likely evolved to deliver more accurate results. 
+
+Since the data was collected through a survey, the results may not be accurate as such participants may not provide honest and accurate answers. 
