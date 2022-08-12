@@ -43,7 +43,7 @@ FitBit Fitness Tracker Data on [Kaggle]( https://www.kaggle.com/datasets/arashni
 
 ### Limitations: 
 
-*The sample size is small as only 30 individuals were considered. 
+* The sample size is small as only 30 individuals were considered. 
 
 The data is about six years old; the FitBit devices have likely evolved to deliver more accurate results. 
 
