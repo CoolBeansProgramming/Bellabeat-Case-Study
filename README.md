@@ -7,7 +7,7 @@ Bellabeat’s co-founders would like to analyze data from non-Bellabeat fitness 
 
 ## Ask
 
-Key stakeholders:
+### Key stakeholders:
 
 1. Urška Sršen: Bellabeat’s cofounder and Chief Creative Officer
 
@@ -15,7 +15,7 @@ Key stakeholders:
 
 3. The Bellabeat marketing analytics team: a team of data analysts responsible for collecting, analyzing, and reporting data that helps guide Bellabeat’s marketing strategy.
 
-Bellabeat products
+### Bellabeat products
 
 -Bellabeat app: The Bellabeat app provides users with health data related to their activity, sleep, stress, menstrual cycle, and mindfulness habits. This data can help users better understand their current habits and make healthy decisions. The Bellabeat app connects to their line of smart wellness products.
 
@@ -29,7 +29,7 @@ Bellabeat products
 
 Business task: Analyze non-Bellabeat smart device data and compare with one Bellabeat product to discover insights to help guide marketing strategies for the company.
 
-Key Questions
+### Key Questions
 
 1. What are some trends in smart device usage?
 2. How could these trends apply to Bellabeat customers?
@@ -37,11 +37,11 @@ Key Questions
 
 ## Prepare 
 
-Data source: 
+### Data source: 
 
 FitBit Fitness Tracker Data on [Kaggle]( https://www.kaggle.com/datasets/arashnic/fitbit) in 18 csv files. The data contains smart health data from personal fitness trackers for thirty fitbit users. The data was collected via a survey of personal tracker data, including minute-level output for physical activity, hear rate, and sleep monitoring, through Amazon Mechanical Turk between March 12, 2016 and May 12, 2016. It was updated two years ago as of August 2022. The data includes information about daily activity, steps, and heart rate. 
 
-Limitations: 
+### Limitations: 
 
 The sample size is small as only 30 individuals were considered. 
 
@@ -49,7 +49,7 @@ The data is about six years old; the FitBit devices have likely evolved to deliv
 
 Since the data was collected through a survey, the results may not be accurate as such participants may not provide honest and accurate answers. 
 
-Supporting data source: 
+### Supporting data source: 
 
 As the FitBit data has the limitations listed above, additional data sources will be useful in the analysis. 
 
