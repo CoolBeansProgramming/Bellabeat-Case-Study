@@ -1,4 +1,5 @@
 # How Can a Wellness Technology Company Play It Smart? 
+
 ## A Google Data Analytics Professional Certificate Capstone Project
 
 [Bellabeat]( https://bellabeat.com/) is a company that develops fitness products for women. Their products include smart water bottles, fashionable fitness watches and jewelry, and yoga mats. Users can access their health data collected through these devices in the Bellabeat app.
@@ -7,7 +8,7 @@ Bellabeat’s co-founders would like to analyze data from non-Bellabeat fitness 
 
 ## Ask
 
-### Key stakeholders:
+### Key stakeholders
 
 1. Urška Sršen: Bellabeat’s cofounder and Chief Creative Officer
 
@@ -27,7 +28,9 @@ Bellabeat’s co-founders would like to analyze data from non-Bellabeat fitness 
 
 * Bellabeat membership: Bellabeat also offers a subscription-based membership program for users. Membership gives users 24/7 access to fully personalized guidance on nutrition, activity, sleep, health and beauty, and mindfulness based on their lifestyle and goals
 
-### Business task: Analyze non-Bellabeat smart device data and compare with one Bellabeat product to discover insights to help guide marketing strategies for the company.
+### Business task
+
+Analyze non-Bellabeat smart device data and compare with one Bellabeat product to discover insights to help guide marketing strategies for the company.
 
 ### Key Questions
 
@@ -51,7 +54,5 @@ FitBit Fitness Tracker Data on [Kaggle]( https://www.kaggle.com/datasets/arashni
 
 ### Supporting data source: 
 
-As the FitBit data has the limitations listed above, additional data sources will be useful in the analysis. 
-
-[Mi Band fitness tracker data (04.2016 - present)](https://www.kaggle.com/datasets/damirgadylyaev/more-than-4-years-of-steps-and-sleep-data-mi-band)
+As the FitBit data has the limitations listed above, an additional data source will be useful in the analysis. The [Mi Band fitness tracker data (04.2016 - present)](https://www.kaggle.com/datasets/damirgadylyaev/more-than-4-years-of-steps-and-sleep-data-mi-band) contains data relating to steps and sleep monitoring for one invididual from April 2016 to July 2022 collected from the Mi Band from Xiaomi. With this data, the analysis can focus on one individual over an extended period of time. The uploader of the data does note that there were about two weeks worth of step data that was corrupted so these daat points were defaulted to zero.  
 
