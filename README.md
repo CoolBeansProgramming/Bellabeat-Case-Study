@@ -58,3 +58,16 @@ As the FitBit data has the limitations listed above, an additional data source w
 
 For a more throuogh look at the data see the [Data Dictionary and Documentation](https://github.com/CoolBeansProgramming/Bellabeat-Case-Study/blob/main/Data%20Documentation%20and%20Data%20Dictionary.md) file. 
 
+## Process
+
+# Choosing Data Files
+
+Since the file `dailyActivity_merged.csv ` provides a good summary of steps and calories burned and the `sleepDay_merged.csv` file provides sleep data, only these two files will be used in the analysis. 
+
+# Applications
+Excel will be used to load and clean the data.
+
+# Cleaning Process 
+
+
+
