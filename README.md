@@ -56,5 +56,5 @@ FitBit Fitness Tracker Data on [Kaggle]( https://www.kaggle.com/datasets/arashni
 
 As the FitBit data has the limitations listed above, an additional data source would be useful in the analysis. The [Mi Band fitness tracker data (04.2016 - present)](https://www.kaggle.com/datasets/damirgadylyaev/more-than-4-years-of-steps-and-sleep-data-mi-band) contains data relating to steps and sleep monitoring for one invididual from April 2016 to July 2022 collected from the Mi Band from Xiaomi. The data is stored in two CSV files, one for steps and one for sleep. Using this data, the analysis can also consider one individual over an extended period of time. The uploader of the data does note that there were about two weeks worth of step data that was corrupted so these data points were defaulted to zero.  
 
-For a more throuogh look at the data see the [Data Dictionary and Documentation](https://github.com/CoolBeansProgramming/Bellabeat-Case-Study/blob/main/Data%20Dictionary%20and%20Documentation.md) file. 
+For a more throuogh look at the data see the [Data Dictionary and Documentation](https://github.com/CoolBeansProgramming/Bellabeat-Case-Study/blob/main/Data%20Documentation%20and%20Data%20Dictionary.md) file. 
 
