@@ -77,7 +77,7 @@ Excel will be used to load and clean the data.
 # Analyze 
 
 ## Applications 
-R will be used to transform and explore the data. Tableau will be used for data visualizations. 
+R will be used to transform and explore the data and Tableau for data visualizations. 
 
 When you format a CSV file in Excel, the changes do not save to the CSV file. Therefore the Id field will need to be reformated as a string in R. All R code can be found [here](https://github.com/CoolBeansProgramming/Bellabeat-Case-Study/blob/main/BellaBeat_RScript.R).
 
