@@ -33,7 +33,7 @@ The Data Dictionary can be found [here](https://www.kaggle.com/datasets/arashnic
 
 * Fields: 
 *   SleepDay: Date on which the sleep event started
-*   TotalSleepRecords: Number of recorded sleep periods for that day; includes napes > 60 minutes 
+*   TotalSleepRecords: Number of recorded sleep periods for that day; includes naps > 60 minutes 
 *   TotalMinutesAsleep: Total bumber of minutes classified as being "asleep"
 *   TotalTimeInBed: Total minutes spent in bed, including asleep, restless, and awake, that occurred during the defined sleep record 
 
