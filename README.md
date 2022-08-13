@@ -58,16 +58,30 @@ As the FitBit data has the limitations listed above, an additional data source w
 
 For a more throuogh look at the data see the [Data Dictionary and Documentation](https://github.com/CoolBeansProgramming/Bellabeat-Case-Study/blob/main/Data%20Documentation%20and%20Data%20Dictionary.md) file. 
 
-## Process
+# Process
 
-# Choosing Data Files
+## Choosing Data Files
 
 Since the file `dailyActivity_merged.csv ` provides a good summary of steps and calories burned and the `sleepDay_merged.csv` file provides sleep data, only these two files will be used in the analysis. 
 
-# Applications
+## Applications
 Excel will be used to load and clean the data.
 
-# Cleaning Process 
+## Cleaning Process 
 
+1) Make sure there are no blank entries in the data by using filters.
+2) Convert Id field to text data type as no numerical equations are needed for this field. 
+3) Convert ActivityDate from Datetime to Date types as no times are given in the data. 
+4) In the `dailyActivity_merged.csv ` file, there are many instances where TotalSteps is zero and SedentaryMinutes is 1440; the number of calories burned vary between users. This is most likely due to the weight and height of the user. There are a few instances where the sedentary minutes is 1440 but the calories burned is 0. 
 
+# Analyze 
 
+## Applications 
+R will be used to transform and explore the data. Tableau will be used for data visualizations. 
+
+When you format a CSV file in Excel, the changes do not save to the CSV file. Therefore the Id field will need to be reformated as a string in R. 
+
+1) Load the tidyverse package and data
+2) Check to see if the data has been loaded correctly
+3) Comvert the Id field to character data type and rename ActivityDate, SleepDay to Day to prepare to join the two data sets
+4) Join using a right join on activity by Id and Day 
