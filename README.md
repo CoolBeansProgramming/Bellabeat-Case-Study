@@ -90,4 +90,4 @@ When you format a CSV file in Excel, the changes do not save to the CSV file. Th
 3) Comvert the Id field to character data type and rename ActivityDate, SleepDay to Day to prepare to join the two data sets
 4) Join using a right join on activity by Id and Day 
 
-# Summary Statistics
+### Summary Statistics
