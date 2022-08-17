@@ -55,7 +55,7 @@ the Alta HR, Charge 2, Blaze, and Ionic. All other devices support the Classic s
 * WeightPounds: weight in pounds
 * Fat: body fat percentage recorded
 * BMI: measure of body mass index based on the height and weight in the participant's Fitbit.com profile
-* IsManualReport: if the data for this weigh in was done manuall (TRUE), or if the data was measured and synched  directly to Fitbit.com from a connected scale (FALSE)
+* IsManualReport: if the data for this weigh in was done manually (TRUE), or if the data was measured and synched  directly to Fitbit.com from a connected scale (FALSE)
 * LogId: the unique log id in Fitbit's system 
 
 
