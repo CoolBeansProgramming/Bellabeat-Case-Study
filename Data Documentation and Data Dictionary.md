@@ -41,3 +41,23 @@ The Data Dictionary can be found [here](https://www.kaggle.com/datasets/arashnic
 Fitbit.com profile), or are automatically detected on supported models (Charge, Alta, Alta HR
 Charge HR, Flex, Blaze, Charge 2, Flex 2, Ionic, and Surge). Sleep Stages are supported by
 the Alta HR, Charge 2, Blaze, and Ionic. All other devices support the Classic sleep algorithm.
+
+
+
+
+`weightLogInfo_merged`
+* Description: contains data values pertaining to each tracked weight measurement
+* Format: Long
+
+
+* Date: date and time at which weight was recorded
+* WeightKg: weight recorded in kilograms
+* WeightPounds: weight in pounds
+* Fat: body fat percentage recorded
+* BMI: measure of body mass index based on the height and weight in the participant's Fitbit.com profile
+* IsManualReport: if the data for this weigh in was done manuall (TRUE), or if the data was measured and synched  directly to Fitbit.com from a connected scale (FALSE)
+* LogId: the unique log id in Fitbit's system 
+
+
+* Note: Weight data can be entered by participants using the mobile app or Fitbit dashboard, or
+by using a scale connected to the Fitbit account (Aria or Withings)
