@@ -125,3 +125,6 @@ combined_data %>%
 select(TotalMinutesAsleep, TotalSteps, TotalDistance, VeryActiveMinutes, FairlyActiveMinutes, LightlyActiveMinutes, SedentaryMinutes, Calories, WeightKg, Fat, BMI, IsManualReport) %>%
 summary()
 ```
+![Alt text](https://github.com/CoolBeansProgramming/Bellabeat-Case-Study/blob/main/Summary%20Statistics.png "Summary Statistics")
+
+
