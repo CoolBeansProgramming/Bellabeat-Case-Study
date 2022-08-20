@@ -8,6 +8,7 @@ weight <-read_csv("weightLogInfo_merged.csv")
 # Check that the data has loaded correctly 
 head(activity)
 head(sleep)
+head(weight)
 
 # Convert Id to character data type 
 # Convert Day to date format 
@@ -30,20 +31,26 @@ weight <-weight %>%
   rename("Day"="Date")
 
 
-# Combine activity and sleep data frames
+# Combine data frames; add day of the week 
 combined_data <-sleep %>%
   right_join(activity, by=c("Id","Day")) %>%
-  left_join(weight, by=c("Id", "Day"))
+  left_join(weight, by=c("Id", "Day")) %>%
+  mutate(Weekday = weekdays(as.Date(Day, "m/%d/%Y")))
 
-# Find and remove duplicate rows; NAs; distinct Ids
+# Find and remove duplicate rows; count NAs and distinct Ids
 combined_data <-combined_data[!duplicated(combined_data), ]
-
 sum(is.na(combined_data))
-
 n_distinct(combined_data$Id)
+n_distinct(sleep$Id)
+n_distinct(weight$Id)
 
-# Summary Statistics 
-summary(combined_data)
+
+# Select summary statistics 
+combined_data %>%
+  select(TotalMinutesAsleep, TotalSteps, TotalDistance, VeryActiveMinutes, FairlyActiveMinutes, LightlyActiveMinutes, SedentaryMinutes, Calories, WeightKg, Fat, BMI, IsManualReport) %>%
+  summary()
+
+
 
 
 
