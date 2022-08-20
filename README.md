@@ -127,4 +127,4 @@ summary()
 ```
 ![Alt text](https://github.com/CoolBeansProgramming/Bellabeat-Case-Study/blob/main/Summary%20Statistics.png "Summary Statistics")
 
-![Alt text](/relative/[path](https://github.com/CoolBeansProgramming/Bellabeat-Case-Study/blob/main/Summary%20Statistics.png)/to/img.jpg?raw=true "Optional Title")
+![test](https://github.com/CoolBeansProgramming/Bellabeat-Case-Study/blob/main/Summary%20Statistics.png?raw=true "Optional Title")
