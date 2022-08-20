@@ -68,9 +68,9 @@ As `dailyActivity_merged.csv ` provides a good summary of steps and calories bur
 
 
 ## Applications
-Excel will be used to load and clean the data.
+Excel will be used to load and take an initial pass for issues, R to transform and explore the data, and Tableau to interactively visuallize the data. 
 
-## Cleaning Process 
+## Initial Pass
 
 1) Make sure there are no blank entries in the data by using filters.
 2) Convert Id field to text data type as no numerical equations are needed for this field. 
@@ -78,16 +78,50 @@ Excel will be used to load and clean the data.
 4) In the `dailyActivity_merged.csv ` file, there are many instances where TotalSteps is zero and SedentaryMinutes is 1440; the number of calories burned vary between users. This is most likely due to the weight and height of the user. There are a few instances where the sedentary minutes is 1440 but the calories burned is 0. 
 5) In the `weightLogInfo_merged` file, there are only two entries for the Fat field so this will not be used to draw insights. 
 
+## Transform and Explore 
+All R code can be found [here](https://github.com/CoolBeansProgramming/Bellabeat-Case-Study/blob/main/BellaBeat_RScript.R).
+
+1) Load the tidyverse package and data files 
+2) Check to see if the data has been loaded correctly
+3) Convert the Id field to character data type 
+4) Rename ActivityDate, SleepDay, and Date to convert to date data type 
+
+```
+activity <-activity %>%
+  mutate_at(vars(Id), as.character) %>%
+  mutate_at(vars(ActivityDate), as.Date, format = "%m/%d/%y") %>%
+  rename("Day"="ActivityDate") 
+```
+  
+  
+5) Combine data frames using left and right joins
+6) Add day of the week variable 
+
+```
+combined_data <-sleep %>%
+  right_join(activity, by=c("Id","Day")) %>%
+  left_join(weight, by=c("Id", "Day")) %>%
+  mutate(Weekday = weekdays(as.Date(Day, "m/%d/%Y")))
+```
+
+7) Filter and remove duplicate rows; count NAs and distinct entries using Id
+
+```
+combined_data <-combined_data[!duplicated(combined_data), ]
+sum(is.na(combined_data))
+n_distinct(combined_data$Id)
+n_distinct(sleep$Id)
+n_distinct(weight$Id)
+```
+
+The final data frame has 940 variables with 25 variables. There are 33 distinct Id entries total. The number of distinct users in dailyActivity, sleepDay, and weightLogInfo are 33, 24, and 8, respectively. There are 6893 NAs in the combined data. This is not surprising as there is only weight data from eight users and not all users logged sleep information. 
+
 # Analyze 
 
-## Applications 
-R will be used to transform and explore the data and Tableau for data visualizations. 
+## Select summary Statistics
 
-When you format a CSV file in Excel, the changes do not save to the CSV file. Therefore the Id field will need to be reformated as a string in R. All R code can be found [here](https://github.com/CoolBeansProgramming/Bellabeat-Case-Study/blob/main/BellaBeat_RScript.R).
-
-1) Load the tidyverse package and data
-2) Check to see if the data has been loaded correctly
-3) Comvert the Id field to character data type and rename ActivityDate, SleepDay to Day to prepare to join the two data sets
-4) Join using a right join on activity by Id and Day 
-
-### Summary Statistics
+```
+combined_data %>%
+select(TotalMinutesAsleep, TotalSteps, TotalDistance, VeryActiveMinutes, FairlyActiveMinutes, LightlyActiveMinutes, SedentaryMinutes, Calories, WeightKg, Fat, BMI, IsManualReport) %>%
+summary()
+```
