@@ -118,7 +118,7 @@ The final data frame has 940 variables with 25 variables. There are 33 distinct 
 
 # Analyze 
 
-## Select summary Statistics
+## Select summary statistics
 
 ```
 combined_data %>%
