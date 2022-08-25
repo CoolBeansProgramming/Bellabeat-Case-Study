@@ -55,16 +55,15 @@ combined_data %>%
   select(TotalMinutesAsleep, TotalSteps, TotalDistance, VeryActiveMinutes, FairlyActiveMinutes, LightlyActiveMinutes, SedentaryMinutes, Calories, WeightKg, Fat, BMI, IsManualReport) %>%
   summary()
 
-
 # Total steps by day 
 ggplot(data=combined_data, aes(x=Weekday, y=TotalSteps)) + 
   geom_bar(stat="identity", fill="#fa8072")+
   labs(title="Steps by Day", y="Total Steps") 
   
-# Minutes of very high activity per day 
-ggplot(data=combined_data, aes(x=Weekday, y=VeryActiveMinutes)) + 
+# Minutes of moderate activity per day 
+ggplot(data=combined_data, aes(x=Weekday, y=FairlyActiveMinutes)) + 
   geom_bar(stat="identity", fill="#fa8072")+
-  labs(title="Very High Activity by Day", y="Minutes") 
+  labs(title="Fairly Active Minutes by Day", y="Minutes") 
 
 # Logged Activities Distance 
 ggplot(data=combined_data, aes(x=Weekday, y=LoggedActivitiesDistance)) + 
@@ -83,8 +82,5 @@ ggplot(combined_data) +
 
 # Export data to excel file 
 write.xlsx(combined_data, file="Fitbit_Fitness_Data.xlsx")
-
-
-
 
 
