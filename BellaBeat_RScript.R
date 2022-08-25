@@ -1,6 +1,7 @@
 # Load library and files 
 library(tidyverse)
 require(forcats)
+library(openxlsx)
 
 activity <-read_csv("dailyActivity_merged.csv")
 sleep <-read_csv("sleepDay_merged.csv")
@@ -79,6 +80,9 @@ ggplot(combined_data, aes(TotalMinutesAsleep)) +
 ggplot(combined_data) +
   geom_point(mapping = aes(x=TotalMinutesAsleep/60, y=Calories), na.rm=TRUE, color="#fa8072") +
   labs(title="Calories vs Time Slept", x="Time Asleep (Hours)", y="Calories") 
+
+# Export data to excel file 
+write.xlsx(combined_data, file="Fitbit_Fitness_Data.xlsx")
 
 
 
