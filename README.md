@@ -129,18 +129,28 @@ summary()
 
 ![Summary Statistics](https://github.com/CoolBeansProgramming/Bellabeat-Case-Study/blob/main/Summary%20Statistics.png?raw=true "Summary Statistics")
 
-The average user weighs 72.04 kg, has a BMI of 25.19, and spent the most time doing light activities for their physicial activity. Per day on average they also slept 6.9 hours, took 7638 steps, and traveled 5.49 km. 
+The average user weighs 72.04 kg, has a BMI of 25.19, and spent the most time doing light activities for their physical activity. Per day on average they also slept 6.9 hours, took 7638 steps, and traveled 5.49 km. 
 
 ![Steps by Day](https://github.com/CoolBeansProgramming/Bellabeat-Case-Study/blob/main/Images/Total%20steps%20by%20day.png?raw=true "Steps by Day")
 
+Users took the most steps on Sunday and the least number of steps on Fridays. As all the values are fairly high, the marketing team can conclude that users value the step feature of health fitness devices. They could also assume that the feature will be very useful for Bellabeat customers. The marketing team could also send notifications to users Thursday evenings and Friday and Saturday mornings to encouraging them to continue being active throughout the day. 
+
+
 ![Fairly Active Minutes by Day](https://github.com/CoolBeansProgramming/Bellabeat-Case-Study/blob/main/Images/Minutes%20of%20moderate%20activity%20per%20day.png?raw=true "Fairly Active Minutes by Day")
+
+It is interesting to see that the amount of time spent being fairly active decreases on Wednesday and then picks back up on Thursday. This may be due to the fact that most people are going back to work on Monday and then may get discouraged or tired by Wednesday. Wednesday may also be a popular rest day, allowing them to resume their activities on Thursday. 
 
 ![Distribution of Total Sleep Time](https://github.com/CoolBeansProgramming/Bellabeat-Case-Study/blob/main/Images/Distribution%20of%20sleep%20time.png?raw=true "Distribution of Total Sleep Time")
 
+From the above histogram, most people slept between 312 and 563 minutes (between 5.2 and 9.4 hours).
+
 ![Calories vs Time Slept](https://github.com/CoolBeansProgramming/Bellabeat-Case-Study/blob/main/Images/Total%20minutes%20Asleep%20vs%20Calories.png?raw=true "Calories vs Time Slept")
 
+Most calories were burned by those who slept between 5 and 7 hours. 
 
 ![Logged Activity Distance by Day](https://github.com/CoolBeansProgramming/Bellabeat-Case-Study/blob/main/Images/Logged%20Activities%20Distance.png?raw=true "Logged Activity Distance by Day")
+
+The logged feature was not used too often as there were many blanks in the data and no records were available  for Thursday and Friday. The marketing team can decide not to a feature activity distance log function as many users seem to not use this. The highest days of logged distance were on the weekend or times when many people likely have free time to do physical activities. 
 
 
 
