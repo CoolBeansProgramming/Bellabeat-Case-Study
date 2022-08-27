@@ -154,6 +154,8 @@ The logged feature was not used too often as there were many blanks in the data 
 
 ## Share 
 
+[Bellabeat Dashboard](https://public.tableau.com/app/profile/paijetableau/viz/BellaBeatCaseStudy_16610415560350/Dashboard?publish=yes)
+
 ## Prepare 
 
 
