@@ -70,7 +70,7 @@ As `dailyActivity_merged.csv ` provides a good summary of steps and calories bur
 ## Applications
 Excel will be used to load and take an initial pass for issues, R to transform and explore the data, and Tableau to interactively visuallize the data. 
 
-## Initial Pass
+## Initial Pass Through 
 
 1) Make sure there are no blank entries in the data by using filters.
 2) Convert Id field to text data type as no numerical equations are needed for this field. 
@@ -133,8 +133,7 @@ The average user weighs 72.04 kg, has a BMI of 25.19, and spent the most time do
 
 ![Steps by Day](https://github.com/CoolBeansProgramming/Bellabeat-Case-Study/blob/main/Images/Total%20steps%20by%20day.png?raw=true "Steps by Day")
 
-Users took the most steps on Sundays and the least number of steps on Fridays. As all the values are fairly high, the marketing team can conclude that users value the step feature of health fitness devices. They could also assume that the feature will be very useful for Bellabeat customers. To encourage users to continue being physical active throughout the day, the marketing team could send notifications to users Thursday evenings and Friday and Saturday mornings.
-
+Users took the most steps on Sundays and the least number of steps on Fridays. As all the values are fairly high, the marketing team can conclude that users value the step feature of health fitness devices. They could also assume that the feature will be very useful for Bellabeat customers. 
 
 ![Fairly Active Minutes by Day](https://github.com/CoolBeansProgramming/Bellabeat-Case-Study/blob/main/Images/Minutes%20of%20moderate%20activity%20per%20day.png?raw=true "Fairly Active Minutes by Day")
 
@@ -150,13 +149,20 @@ Besides a few outliers, calories were burned by those who slept between 5 and 7 
 
 ![Logged Activity Distance by Day](https://github.com/CoolBeansProgramming/Bellabeat-Case-Study/blob/main/Images/Logged%20Activities%20Distance.png?raw=true "Logged Activity Distance by Day")
 
-The logged feature was not used too often as there were many blanks in the data and no records were available  for Thursday and Friday. The marketing team can decide not to a feature activity distance log function as many users seem to not use this. The highest days of logged distance were on the weekend or times when many people likely have free time to do physical activities. 
+The logged feature was not used too often as there were many blanks in the data and no records were available  for Thursday and Friday. The highest days of logged distance were on the weekend or times when many people likely have free time to do physical activities. 
 
 ## Share 
 
 [Bellabeat Dashboard](https://public.tableau.com/app/profile/paijetableau/viz/BellaBeatCaseStudy_16610415560350/Dashboard?publish=yes)
 
-## Prepare 
+## Act
 
+* The number of steps users took was the least on Friday which may be due to user becoming tired at the end of the week. As this is not limited to only FitBit customers, the marketing team could send notifications to users Thursday evenings and Friday and Saturday mornings encouraging users to continue being physical active throughout the day.
+
+* Many users did not use the Logged Distance feature on the FitBit devices. This suggests that users would prefer to have their data collected automatically. The Bellabeat marketing team can decide not to a feature activity distance log function as many users seem to not use this.
+
+* Compared to the data set size, there were very few entries for weight. Of those that were entered, about 2/3 were done manually. The individuals who did not log their weight may not have been concerned with losing weight or did not have the device needed to automatically record this data. Since many did not use the logged distance feature as well, the Bellabeat team could market weight devices like smart scales that automatically record this information.
+
+* Other data sources, like the [Mi Band fitness tracker data (04.2016 - present)](https://www.kaggle.com/datasets/damirgadylyaev/more-than-4-years-of-steps-and-sleep-data-mi-band), could be useful for further exploration as this specific data set follows on individual over the course of six years. 
 
 
