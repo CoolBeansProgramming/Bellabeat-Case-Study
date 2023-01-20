@@ -2,6 +2,9 @@
 
 ## A Google Data Analytics Professional Certificate Capstone Project
 
+
+<img align="right" width="500" height="400" src="https://repository-images.githubusercontent.com/522069892/740a3949-ac89-4392-b167-194a026604ed">
+
 [Bellabeat]( https://bellabeat.com/) is a company that develops fitness products for women. Their products include smart water bottles, fashionable fitness watches and jewelry, and yoga mats. Users can access their health data collected through these devices in the Bellabeat app.
 
 Bellabeat’s co-founders would like to analyze data from non-Bellabeat fitness devices to see how consumers are using these products. The company hopes to use these insights to help guide new marketing strategies for the company. 
